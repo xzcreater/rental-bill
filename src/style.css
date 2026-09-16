@@ -11,3 +11,13 @@ h1{font-weight:400}.status{font-weight:500}.amount{font-size:10.8cqw;letter-spac
 .label .month-badge{margin-left:1.4cqw;padding:.4cqw 1cqw;background:#d9faff;color:#008697;font-size:2.1cqw;font-weight:400;vertical-align:middle}
 .pending-label{display:flex;align-items:center;gap:1.6cqw}.pending-label strong{font-size:3.6cqw;font-weight:500;color:#333;font-variant-numeric:tabular-nums}
 .pending-label strong{font-size:2.8cqw;font-weight:400;color:#1677ff;background:#e8f3ff;border-radius:3cqw;padding:.7cqw 1.8cqw;line-height:normal}
+/* Display at a real mobile CSS width; reference pixels were a high-density capture. */
+.app{max-width:390px;min-height:100vh}.sheet{max-width:390px}.months button:disabled{opacity:.5}.pending-label{gap:1cqw}
+/* Phone canvas height: fixed design baseline for desktop, live viewport on phones. */
+.app{min-height:844px;min-height:max(844px,100dvh);padding-bottom:max(24px,env(safe-area-inset-bottom))}
+@media(max-width:600px){.app{min-height:100vh;min-height:100dvh}}
+.pending-summary{background:#f0f7ff;border-radius:14px;padding:16px;margin:12px 0}.pending-summary>div{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px;font-size:14px}.pending-summary b{font-weight:400;font-variant-numeric:tabular-nums}.pending-summary .pending-sum{border-top:1px solid #d6e7fa;padding-top:14px;margin-bottom:8px;align-items:center}.pending-sum strong{font-size:22px;color:#1677ff;font-variant-numeric:tabular-nums}.pending-summary p{font-size:12px;color:#65758a;line-height:1.5;margin:0}
+.history-coupon{display:inline-block;margin-top:8px;padding:4px 8px;border-radius:12px;color:#f33;background:#ffede9;font-size:12px;font-style:normal}.bill-row>b{flex-shrink:0}.bill-row{gap:12px}
+.repayment-overview{display:flex;align-items:flex-start;justify-content:space-between;gap:3cqw}.repayment-primary{min-width:0}
+
+.repayment-primary{width:100%}.amount-row{display:flex;align-items:flex-end;gap:2.4cqw}.amount-row>.amount{flex-shrink:0}.repayment-pill{display:inline-flex;align-items:center;flex-shrink:0;border-radius:999px;background:#111;color:#fff;overflow:hidden;font-size:2.8cqw;line-height:1.6;white-space:nowrap}.repayment-pill-label{display:inline-flex;align-items:center;gap:.7cqw;padding:.55cqw 1.35cqw .55cqw .8cqw;background:#ece0bf;color:#928761;border-radius:999px}.repayment-pill-label svg{width:3.1cqw;height:3.1cqw}.repayment-pill-value{padding:.55cqw 1.55cqw .55cqw 1.1cqw}
